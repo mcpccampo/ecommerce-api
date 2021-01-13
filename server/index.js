@@ -8,6 +8,9 @@ const app = express();
 // use json
 app.use(express.json());
 
+// routes
+app.get('/api/products', ctr.products);
+
 // start server
 app.listen(port, () => {
   console.clear();
